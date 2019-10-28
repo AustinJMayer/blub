@@ -1,0 +1,8 @@
+HTML: 
+<link href="css/standard.css" rel="stylesheet">
+<script src="js\main.js"></script>
+<img id="sidefish" src="images\fishlogo.png">
+<img id="under" src="images\underline.png">
+
+CSS:
+background-image: url('../images/water-background.jpg');

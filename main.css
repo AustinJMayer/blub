@@ -1,0 +1,460 @@
+html,body {
+    margin:0;
+    padding: 0;
+    font-size: 1em;
+}
+
+#blub {
+    background-image: url("water-background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.sidenav {
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .75);
+    overflow-x: hidden;
+    transition: 1s;
+  }
+
+  .hamburger {
+    display: none;
+    padding: 0;
+    padding:0;
+  }
+
+  #blub .sidenav ul {
+    margin: 0;
+    padding:0;
+  }
+
+  .fa-times {
+    display: none;
+    color: red;
+    position: relative;
+    float: left;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  
+  .sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #b1b1b1;
+    display: block;
+    margin-bottom: 1em;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+.fa-bars {
+  color: white;
+  display: block;
+  position: relative;
+  float: left;
+  font-size: 2em;
+  cursor: pointer;
+
+}
+
+#logo {
+    color:#e7e7e7;
+    font-weight: bold;
+    font-family: 'Megrim', cursive;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#blubmain {
+    z-index: 1;
+}
+
+#sideabout {
+  padding-top: 2em;
+}
+
+#fish {
+    height: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10vh;
+
+}
+
+#sidefish {
+  display:none;
+      height: 15vh;
+      top: 1em;
+      position: absolute;
+      right: 1em;
+      z-index: 3;
+}
+
+#blubmain h1 {
+    text-align: center;
+    font-family: 'Megrim', cursive;
+    margin:0;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    color: white;
+    font-size: 3em;
+}
+
+#blubmain p{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+  }
+.about-section {
+    position: absolute;
+    top: 15%;
+    background-color: #A3DDFF;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #888;
+    text-align: center;
+    z-index: 3;
+    width: 85%;
+    left:-100%;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: auto;
+    transition: 1s;
+  }
+
+  .about-section h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+
+
+  .about-section-shown {
+    position: absolute;
+    top: 15%;
+    background-color: #A3DDFF;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #888;
+    text-align: center;
+    z-index: 3;
+    width: 85%;
+    overflow: auto;
+    transition: 1s;
+    left:0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .about-section-shown h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  #about-body {
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
+
+  }
+#under{
+  width:100%;
+  padding-bottom: 4em;
+}
+  .about-section-shown span {
+    font-family: 'Megrim', cursive;
+    font-weight: bold;
+  }
+
+  .service-section {
+    position: absolute;
+    top: 15%;
+    background-color: #A3DDFF;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #888;
+    text-align: center;
+    z-index: 3;
+    width: 85%;
+    left:-100%;
+    overflow: auto;
+    transition: 1s;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .service-section h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .service-section-shown {
+    position: absolute;
+    top: 15%;
+    background-color: #A3DDFF;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #888;
+    text-align: center;
+    z-index: 3;
+    width: 85%;
+    overflow: auto;
+    transition: 1s;
+    left:0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .service-section-shown h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .contact-section {
+    position: absolute;
+    top: 15%;
+    background-color: #A3DDFF;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #888;
+    text-align: center;
+    z-index: 3;
+    width: 85%;
+    left:-100%;
+    overflow: auto;
+    transition: 1s;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .contact-section h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .contact-section-shown {
+    position: absolute;
+    top: 15%;
+    background-color: #A3DDFF;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #888;
+    text-align: center;
+    z-index: 3;
+    width: 85%;
+    overflow: auto;
+    transition: 1s;
+    left:0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .contact-section-shown h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .contact-section a {
+    margin-bottom: 2em;
+  }
+
+  .contact-section-shown a {
+    margin-bottom: 2em;
+  }
+
+  .more-section {
+    position: absolute;
+    top: 15%;
+    background-color: #A3DDFF;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #888;
+    text-align: center;
+    z-index: 3;
+    width: 85%;
+    left:-100%;
+    overflow: auto;
+    transition: 1s;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .more-section h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .more-section-shown {
+    position: absolute;
+    top: 15%;
+    background-color: #A3DDFF;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #888;
+    text-align: center;
+    z-index: 3;
+    width: 85%;
+    overflow: auto;
+    transition: 1s;
+    left:0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .more-section-shown h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+.about-close {
+    position: absolute;
+    top:10px;
+    right: 20px;
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+.about-close:hover,
+.about-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.service-close {
+    position: absolute;
+    top:10px;
+    right: 20px;
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+.service-close:hover,
+.service-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.contact-close {
+    position: absolute;
+    top:10px;
+    right: 20px;
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+.contact-close:hover,
+.contact-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.more-close {
+    position: absolute;
+    top:10px;
+    right: 20px;
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+.more-close:hover,
+.more-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@media (min-width: 992px) { 
+  #logo {
+    color:#e7e7e7;
+    font-weight: bold;
+    font-family: 'Megrim', cursive;
+    font-size: 2em;
+    margin-bottom: 3em;
+}
+.hamburger {
+  display: block;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.fa-times {
+  display: none !important;
+}
+
+#sidefish {
+  height: 20vh;
+  top: 2em;
+  right: 2em;
+}
+
+
+ }
